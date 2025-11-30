@@ -20,6 +20,7 @@ III. Challenges + future addons
 IV. and V. How to run and install project
 VI. Credit
 VII. Licence
+VIII. Algorythm used in class / implementations
 
 
 I.
@@ -95,4 +96,65 @@ Project is free of licence, you can use it at your own content.
 
 
 Version 1.2: 11/30/2025
+
+
+
+
+
+VIII.
+## 1. Custom Quicksort Algorithm (Divide & Conquer + Recursion)
+
+**File:** `sorting.py`  
+**Used in endpoint:** `/sortedReminders`
+
+Our Quicksort implementation:
+
+- Selects a random **pivot**
+- Partitions items into `less` and `greater` lists based on urgency
+- Recursively sorts both halves
+- Combines them into a sorted list
+
+### Time Complexity
+- **O(n log n)** average  
+- **O(n²)** worst case  
+- Demonstrates recursive **Divide & Conquer**
+
+## 2. Hash Table (Python `dict`)
+
+Inside quicksort we compute urgency using:
+u_cache = {id(t): urgency(t) for t in tasks}
+
+## Installation & Execution
+## Instalation
+ - Extract the ZIP folder
+     - Open the Expoapp_Python folder
+     - Install dependencies (first time only)
+         - Open a terminal inside this folder and run: pip install -r requirements.txt
+     - Start the backend
+        - run_backend.py by double click
+        - you should see Uvicorn running on http://127.0.0.1:8000
+           - open the aplication on http://127.0.0.1:8000/
+           - press Interactive API Interface (front-end)
+  ## How to use the API
+  - Check backend status: GET /status, Try it out, Execute
+      - expected response body : {"status": "Wethan backend running!"}
+  - Create a reminder
+     - open: POST /createReminder
+     - Example input: {"title": "Study","description": "ADS topics","due_date": "2025-12-01 14:00", "priority": 3}
+   - View all reminders
+       - open: GET /allReminders
+   - Create an Alarm
+       - open: POST /createAlarm
+       - Example input: {"time": "2025-12-01T07:30:00","voice_file_path": "none","repeat": "none","label": "Morning alarm"}
+    - View all alarms
+       - open: GET /allAlarms
+       - This lists all stored alarms.
+## Further Improvements
+ -Implement snooze and skip states for alarms
+ -Add audio playback capabilities
+ -Import class schedules (ICS)
+ -Upgrade JSON storage to SQLite
+ -Authentication system
+ -More advanced front-end
+
 
