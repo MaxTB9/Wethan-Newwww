@@ -1,38 +1,30 @@
-# storage.py
-# Simple JSON storage for Alarm and Reminder objects.
-# Uses ISO timestamps because JSON can't store datetime objects directly.
-
-from alarm_model import Alarm    # only if you have an alarm class
-from reminder_model import Reminder
-
-
-
+from reminder_model import Reminder, Alarm
 from datetime import datetime
 import json, os
 
 # ---------- Alarm helpers ----------
-
 def _serialize_alarm(a):
     return {
         "time": a.time.isoformat(),
-        "voice_file_path": a.voice_file_path,
         "repeat": a.repeat,
         "label": a.label,
+        "priority": a.priority,
+        "mood": a.mood,
         "active": a.active,
     }
 
 def _deserialize_alarm(d, AlarmClass):
     a = AlarmClass(
         time=datetime.fromisoformat(d["time"]),
-        voice_file_path=d["voice_file_path"],
         repeat=d["repeat"],
         label=d["label"],
+        priority=d.get("priority", 2),
+        mood=d.get("mood", "motivational"),
     )
     a.active = d.get("active", True)
     return a
 
 # ---------- Reminder helpers ----------
-
 def _serialize_reminder(r):
     return {
         "title": r.title,
@@ -48,16 +40,13 @@ def _deserialize_reminder(d, ReminderClass):
         title=d["title"],
         description=d["description"],
         due_date=datetime.fromisoformat(d["due_date"]),
-        priority=d["priority"],
+        priority=d.get("priority", 2),
     )
     r.completed = d.get("completed", False)
-    # keep original created_at if present
-    if "created_at" in d:
-        r.created_at = datetime.fromisoformat(d["created_at"])
+    r.created_at = datetime.fromisoformat(d.get("created_at", datetime.now().isoformat()))
     return r
 
 # ---------- Repository ----------
-
 class Repository:
     def __init__(self, path="data.json"):
         self.path = path

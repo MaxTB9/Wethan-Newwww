@@ -1,82 +1,142 @@
 {
   "alarms": [
     {
-      "time": "2025-11-26T18:00:00+00:00",
-      "voice_file_path": "Serious.m4a",
+      "time": "2025-11-30T02:31:00+00:00",
       "repeat": "none",
-      "label": "Gym",
+      "label": "Gymmm",
+      "priority": 2,
+      "mood": "motivational",
       "active": true
     },
     {
-      "time": "2025-11-24T18:00:52.454000+00:00",
-      "voice_file_path": "wake_up.m4a",
-      "repeat": "daily",
-      "label": "Test Alarm",
-      "active": true
-    },
-    {
-      "time": "2025-11-26T22:00:00+00:00",
-      "voice_file_path": "Motivational.m4a",
+      "time": "2025-11-30T02:31:00+00:00",
       "repeat": "none",
-      "label": "Joke night",
+      "label": "Gymmm",
+      "priority": 2,
+      "mood": "motivational",
       "active": true
     },
     {
-      "time": "2025-11-24T18:00:59.612000+00:00",
-      "voice_file_path": "wake_up.m4a",
-      "repeat": "daily",
-      "label": "Test Alarm",
-      "active": true
-    },
-    {
-      "time": "2025-11-27T22:00:00+00:00",
-      "voice_file_path": "Motivational.m4a",
+      "time": "2025-12-11T18:51:00+00:00",
       "repeat": "none",
-      "label": "Joke night",
+      "label": "Studying",
+      "priority": 1,
+      "mood": "motivational",
       "active": true
     },
     {
-      "time": "2025-11-24T18:01:07.223000+00:00",
-      "voice_file_path": "wake_up.m4a",
-      "repeat": "daily",
-      "label": "Test Alarm",
-      "active": true
-    },
-    {
-      "time": "2025-11-27T22:00:00+00:00",
-      "voice_file_path": "Serious.m4a",
+      "time": "2025-12-09T22:00:00+00:00",
       "repeat": "none",
-      "label": "Joke night",
+      "label": "Fff",
+      "priority": 2,
+      "mood": "motivational",
       "active": true
     },
     {
-      "time": "2025-11-27T22:00:00+00:00",
-      "voice_file_path": "Serious.m4a",
+      "time": "2025-12-09T22:00:00+00:00",
       "repeat": "none",
-      "label": "Joke night",
+      "label": "Fff",
+      "priority": 2,
+      "mood": "motivational",
       "active": true
     },
     {
-      "time": "2025-11-27T22:00:00+00:00",
-      "voice_file_path": "Serious.m4a",
+      "time": "2025-12-09T22:00:00+00:00",
       "repeat": "none",
-      "label": "Joke night",
+      "label": "Fff",
+      "priority": 1,
+      "mood": "motivational",
       "active": true
     },
     {
-      "time": "2025-11-25T15:00:00+00:00",
-      "voice_file_path": "Serious.m4a",
+      "time": "2025-12-09T22:30:00+00:00",
       "repeat": "none",
-      "label": "Chill",
+      "label": "I like potatoes",
+      "priority": 2,
+      "mood": "motivational",
       "active": true
     },
     {
-      "time": "2025-11-25T15:00:00+00:00",
-      "voice_file_path": "Serious.m4a",
+      "time": "2025-11-30T19:43:00+00:00",
       "repeat": "none",
-      "label": "Chill",
+      "label": "I like potatoes",
+      "priority": 1,
+      "mood": "motivational",
+      "active": true
+    },
+    {
+      "time": "2025-11-30T20:26:00+00:00",
+      "repeat": "none",
+      "label": "Gym going",
+      "priority": 3,
+      "mood": "motivational",
       "active": true
     }
   ],
-  "reminders": []
+  "reminders": [
+    {
+      "title": "Test from phone",
+      "description": "This came from the Expo app",
+      "due_date": "2025-11-24T22:00:00",
+      "priority": 3,
+      "completed": false,
+      "created_at": "2025-11-30T01:51:59.431369"
+    },
+    {
+      "title": "Test from phone",
+      "description": "This came from the Expo app",
+      "due_date": "2025-11-24T22:00:00",
+      "priority": 3,
+      "completed": false,
+      "created_at": "2025-11-30T02:28:34.579714"
+    },
+    {
+      "title": "Test from phone",
+      "description": "This came from the Expo app",
+      "due_date": "2025-11-24T22:00:00",
+      "priority": 3,
+      "completed": false,
+      "created_at": "2025-11-30T19:47:11.537950"
+    },
+    {
+      "title": "Test from phone",
+      "description": "This came from the Expo app",
+      "due_date": "2025-11-24T22:00:00",
+      "priority": 3,
+      "completed": false,
+      "created_at": "2025-11-30T19:49:57.850202"
+    },
+    {
+      "title": "Test from phone",
+      "description": "This came from the Expo app",
+      "due_date": "2025-11-24T22:00:00",
+      "priority": 3,
+      "completed": false,
+      "created_at": "2025-11-30T19:50:25.877402"
+    },
+    {
+      "title": "Test from phone",
+      "description": "This came from the Expo app",
+      "due_date": "2025-11-24T22:00:00",
+      "priority": 3,
+      "completed": false,
+      "created_at": "2025-11-30T20:30:58.036957"
+    },
+    {
+      "title": "Test from phone",
+      "description": "This came from the Expo app",
+      "due_date": "2025-11-24T22:00:00",
+      "priority": 3,
+      "completed": false,
+      "created_at": "2025-11-30T20:31:01.739797"
+    },
+    {
+      "title": "Test from phone",
+      "description": "This came from the Expo app",
+      "due_date": "2025-11-24T22:00:00",
+      "priority": 3,
+      "completed": false,
+      "created_at": "2025-11-30T20:48:23.924235"
+    }
+  ]
 }

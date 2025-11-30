@@ -8,6 +8,11 @@
     "scheme": "expoapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
+
+    "notification": {
+      "iosDisplayInForeground": true
+    },
+
     "ios": {
       "supportsTablet": true
     },
@@ -26,6 +31,7 @@
       "output": "static",
       "favicon": "./assets/images/favicon.png"
     },
+
     "plugins": [
       "expo-router",
       [
@@ -39,8 +45,19 @@
             "backgroundColor": "#000000"
           }
         }
+      ],
+      [
+        "expo-notifications",
+        {
+          "sounds": [
+            "./assets/sounds/serious.m4a",
+            "./assets/sounds/funny.m4a",
+            "./assets/sounds/motivational.m4a"
+          ]
+        }
       ]
     ],
+
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true

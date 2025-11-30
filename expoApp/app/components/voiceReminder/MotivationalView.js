@@ -1,31 +1,44 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View, ImageBackground } from "react-native";
 
 export default function MotivationalView() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Stay Hard 💪</Text>
-      <Text style={styles.subtitle}>
-        “Discipline is doing what you hate to do, but do it like you love it.” — David Goggins
-      </Text>
-    </View>
+    <ImageBackground
+      source={require("../../../assets/images/gym-bg.jpg")}
+      style={styles.bg}
+      imageStyle={{ opacity: 0.45 }}
+      blurRadius={1.5}
+    >
+      <View style={styles.overlay}>
+        <Text style={styles.title}>STAY HARD </Text>
+        <Text style={styles.subtitle}>
+          “The body achieves what the mind believes”
+        </Text>
+      </View>
+    </ImageBackground>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    backgroundColor: "#ff6f00",
-    padding: 20,
-    borderRadius: 10,
-    marginBottom: 20,
+  bg: {
+    flex: 1,
+    width: "100%",
+    height: "100%",
+    justifyContent: "center",
+  },
+  overlay: {
+    paddingHorizontal: 20,
+    paddingVertical: 30,
   },
   title: {
-    fontSize: 22,
+    fontSize: 32,
     fontWeight: "bold",
     color: "#fff",
+    marginBottom: 10,
   },
   subtitle: {
     fontSize: 16,
     color: "#fff",
     fontStyle: "italic",
+    lineHeight: 26,
   },
 });
