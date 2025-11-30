@@ -92,4 +92,4 @@ def get_alarm_sound(mood: str):
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8001)  # 0.0.0.0 allows all connections
+    uvicorn.run(app, host="0.0.0.0", port=8002)  # Changed to 8002

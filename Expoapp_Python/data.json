@@ -71,6 +71,86 @@
       "priority": 3,
       "mood": "motivational",
       "active": true
+    },
+    {
+      "time": "2025-12-09T11:30:00+00:00",
+      "repeat": "none",
+      "label": "Have fun with the boys",
+      "priority": 1,
+      "mood": "funny",
+      "active": true
+    },
+    {
+      "time": "2025-12-02T11:20:00+00:00",
+      "repeat": "none",
+      "label": "Gym",
+      "priority": 3,
+      "mood": "motivational",
+      "active": true
+    },
+    {
+      "time": "2025-12-02T11:20:00+00:00",
+      "repeat": "none",
+      "label": "Gym",
+      "priority": 3,
+      "mood": "motivational",
+      "active": true
+    },
+    {
+      "time": "2025-12-02T11:20:00+00:00",
+      "repeat": "none",
+      "label": "Gym",
+      "priority": 3,
+      "mood": "motivational",
+      "active": true
+    },
+    {
+      "time": "2025-12-02T11:20:00+00:00",
+      "repeat": "none",
+      "label": "Gym",
+      "priority": 3,
+      "mood": "motivational",
+      "active": true
+    },
+    {
+      "time": "2025-12-02T11:20:00+00:00",
+      "repeat": "none",
+      "label": "Gym",
+      "priority": 3,
+      "mood": "motivational",
+      "active": true
+    },
+    {
+      "time": "2025-12-01T06:20:00+00:00",
+      "repeat": "none",
+      "label": "Gym",
+      "priority": 3,
+      "mood": "funny",
+      "active": true
+    },
+    {
+      "time": "2025-12-01T06:20:00+00:00",
+      "repeat": "none",
+      "label": "Gym for Irakli",
+      "priority": 3,
+      "mood": "funny",
+      "active": true
+    },
+    {
+      "time": "2025-12-01T10:00:00+00:00",
+      "repeat": "none",
+      "label": "Painting clase solo",
+      "priority": 3,
+      "mood": "serious",
+      "active": true
+    },
+    {
+      "time": "2026-02-05T07:00:00+00:00",
+      "repeat": "none",
+      "label": "Morning",
+      "priority": 2,
+      "mood": "motivational",
+      "active": true
     }
   ],
   "reminders": [
@@ -137,6 +217,14 @@
       "priority": 3,
       "completed": false,
       "created_at": "2025-11-30T20:48:23.924235"
+    },
+    {
+      "title": "Test from phone",
+      "description": "This came from the Expo app",
+      "due_date": "2025-11-24T22:00:00",
+      "priority": 3,
+      "completed": false,
+      "created_at": "2025-11-30T22:19:13.972648"
     }
   ]
 }

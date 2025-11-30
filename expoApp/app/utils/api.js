@@ -1,4 +1,4 @@
-const BACKEND_URL = "http://192.168.1.42:8001";
+const BACKEND_URL = "http://192.168.1.42:8002";
 
 export async function createAlarm(alarmData) {
   try {
